@@ -13,4 +13,9 @@ ingredients: Ingredient[] = [
   new Ingredient('Tomatoes', 10),
 ];
 
+  onPassingIngredient(ingredient: Ingredient){
+    console.log(ingredient);
+    this.ingredients.push(ingredient);
+  }
+
 }

@@ -1,1 +1,14 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item list-group-item-action" 
+style="margin-top: 8px;margin-bottom: 8px;" (click)="onRecipeItemClicked()">
+    <div class="row" style="align-items: center;">
+        <div class="col-8 float-start">
+            <h4>
+                {{recipeItem.name}}
+            </h4>
+            <p>{{recipeItem.description}}</p>
+        </div>
+        <span class="col-4 float-end">
+            <img src="{{recipeItem.imagePath}}" alt="{{recipeItem.name}}" class="img-fluid" style="max-height: 50%;">
+        </span>
+    </div>
+</a>
