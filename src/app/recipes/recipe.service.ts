@@ -29,6 +29,10 @@ export class RecipeService {
 
   constructor() { }
 
+  getRecipe(position: number){
+    return this.recipes[position];
+  }
+
   getRecipeList(){
     return this.recipes.slice();
   }

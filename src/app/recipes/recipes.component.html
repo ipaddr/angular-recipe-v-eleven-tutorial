@@ -3,12 +3,11 @@
         <app-recipe-list></app-recipe-list>
     </div>
     <div class="col-7">
-        <app-recipe-detail
-        *ngIf="selectedRecipeItem; else temp"
+        <!-- <app-recipe-detail
+        *ngIf="selectedRecipeItem;"
         [selectedRecipeItem]="selectedRecipeItem"
         ></app-recipe-detail>
-        <ng-template #temp>
-            Please select recipe
-        </ng-template>
+        <app-recipe-start></app-recipe-start> -->
+        <router-outlet></router-outlet>
     </div>
 </div>
